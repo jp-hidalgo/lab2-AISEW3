@@ -1,0 +1,74 @@
+Onboarding Personal Information Agent (to customer_proxy_agent):
+
+Hello, I'm here to help you get started with our product. Could you tell me your name and location?
+
+--------------------------------------------------------------------------------
+Provide feedback to Onboarding Personal Information Agent. Press enter to skip and use auto-reply, or type 'exit' to end the conversation: juan
+customer_proxy_agent (to Onboarding Personal Information Agent):
+
+juan
+
+--------------------------------------------------------------------------------
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1721318257.908264    2760 config.cc:230] gRPC experiments enabled: call_status_override_on_cancellation, event_engine_client, event_engine_dns, event_engine_listener, http2_stats_fix, monitoring_experiment, pick_first_new, trace_record_callops, work_serializer_clears_time_cache
+Onboarding Personal Information Agent (to customer_proxy_agent):
+
+Okay, Juan, and what's your location?
+
+
+--------------------------------------------------------------------------------
+Provide feedback to Onboarding Personal Information Agent. Press enter to skip and use auto-reply, or type 'exit' to end the conversation: bogota
+customer_proxy_agent (to Onboarding Personal Information Agent):
+
+bogota
+
+--------------------------------------------------------------------------------
+Onboarding Topic preference Agent (to customer_proxy_agent):
+
+Great! Could you tell me what topics you are interested in reading about?
+Context:
+{'content': "```json\n{'name': 'juan', 'location': 'bogota'}\n``` \n", 'role': 'assistant', 'function_call': None, 'tool_calls': None}
+
+--------------------------------------------------------------------------------
+Provide feedback to Onboarding Topic preference Agent. Press enter to skip and use auto-reply, or type 'exit' to end the conversation: ai
+customer_proxy_agent (to Onboarding Topic preference Agent):
+
+ai
+
+--------------------------------------------------------------------------------
+customer_proxy_agent (to Customer Engagement Agent):
+
+Let's find something fun to read.
+Context:
+{'content': "```json\n{'name': 'juan', 'location': 'bogota'}\n``` \n", 'role': 'assistant', 'function_call': None, 'tool_calls': None}
+{'content': 'The user provided a JSON object containing a name and location, and the AI expressed interest in reading about AI. \n', 'role': 'assistant', 'function_call': None, 'tool_calls': None}
+
+--------------------------------------------------------------------------------
+Customer Engagement Agent (to customer_proxy_agent):
+
+Hey Juan! It's awesome that you're interested in AI. You've got good taste! 😊
+
+Did you know that Bogota, Colombia, is known as the "Athens of South America"? It's got a rich history and tons of beautiful architecture. Just like the real Athens, Bogota is a hub of learning and culture. And speaking of learning, did you know that AI is being used to analyze and preserve historical documents in Bogota?  That's pretty cool, right?
+
+Here's a fun fact about AI that might surprise you: **AI can now generate its own jokes!** It's still learning, but some of them are pretty funny.  For example, an AI once told me: "Why don't scientists trust atoms? Because they make up everything!" 😂
+
+Want to read more about AI? I can tell you about some fascinating applications in different fields like healthcare, finance, or even art! Just let me know what you're interested in.
+
+
+--------------------------------------------------------------------------------
+{'content': "```json\n{'name': 'juan', 'location': 'bogota'}\n``` \n", 'role': 'assistant', 'function_call': None, 'tool_calls': None}
+
+
+{'content': 'The user provided a JSON object containing a name and location, and the AI expressed interest in reading about AI. \n', 'role': 'assistant', 'function_call': None, 'tool_calls': None}
+
+
+{'content': "The conversation focused on AI and Bogota, with the AI assistant highlighting Bogota's rich history and cultural significance, then discussing AI applications in different fields. The conversation ended with the AI assistant offering to provide more information about specific AI applications. \n", 'role': 'assistant', 'function_call': None, 'tool_calls': None}
+
+
+{'usage_including_cached_inference': {'total_cost': 0.0017569999999999999, 'gemini-1.5-flash-latest': {'cost': 0.0017569999999999999, 'prompt_tokens': 152, 'completion_tokens': 33, 'total_tokens': 185}}, 'usage_excluding_cached_inference': {'total_cost': 0.0017569999999999999, 'gemini-1.5-flash-latest': {'cost': 0.0017569999999999999, 'prompt_tokens': 152, 'completion_tokens': 33, 'total_tokens': 185}}}
+
+
+{'usage_including_cached_inference': {'total_cost': 0.001106, 'gemini-1.5-flash-latest': {'cost': 0.001106, 'prompt_tokens': 86, 'completion_tokens': 24, 'total_tokens': 110}}, 'usage_excluding_cached_inference': {'total_cost': 0.001106, 'gemini-1.5-flash-latest': {'cost': 0.001106, 'prompt_tokens': 86, 'completion_tokens': 24, 'total_tokens': 110}}}        
+
+
+{'usage_including_cached_inference': {'total_cost': 0.009037, 'gemini-1.5-flash-latest': {'cost': 0.009037, 'prompt_tokens': 517, 'completion_tokens': 258, 'total_tokens': 775}}, 'usage_excluding_cached_inference': {'total_cost': 0.009037, 'gemini-1.5-flash-latest': {'cost': 0.009037, 'prompt_tokens': 517, 'completion_tokens': 258, 'total_tokens': 775}}} 
